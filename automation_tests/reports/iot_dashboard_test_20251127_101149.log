@@ -1,7 +1,0 @@
-2025-11-27 10:11:49,270 - INFO - 🚀 Memulai pengujian otomatis Web Dashboard IoT...
-2025-11-27 10:11:49,270 - INFO - 🚀 Menginisialisasi Chrome WebDriver...
-2025-11-27 10:11:49,270 - INFO - ====== WebDriver manager ======
-2025-11-27 10:11:50,845 - INFO - Get LATEST chromedriver version for google-chrome
-2025-11-27 10:11:51,434 - INFO - Get LATEST chromedriver version for google-chrome
-2025-11-27 10:11:51,996 - INFO - Driver [C:\Users\imama\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
-2025-11-27 10:11:51,999 - ERROR - ❌ Gagal menginisialisasi WebDriver: [WinError 193] %1 is not a valid Win32 application

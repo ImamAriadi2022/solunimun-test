@@ -1,258 +1,174 @@
-# IoT Web Dashboard Automation Testing
+# IoT Dashboard Automation Testing
 
-Script pengujian otomatis untuk Web Dashboard IoT berbasis React.js menggunakan Python + Selenium WebDriver.
+Script automation testing comprehensive untuk IoT Dashboard dengan validasi sensor dan reporting PDF.
 
-## 🚀 Fitur Utama
+## 🎯 Fitur Testing
 
-### ✅ Yang Sudah Diimplementasikan:
-- **Inisialisasi WebDriver**: Chrome WebDriver dengan webdriver-manager
-- **Verifikasi Halaman Utama**: Validasi judul dan navigasi
-- **Validasi Visualisasi Data**: Deteksi Chart.js & JustGage
-- **Testing Filter Waktu**: 1 Hari, 7 Hari, 30 Hari
-- **Testing Download + Password**: Skenario positif & negatif
-- **Logging Lengkap**: Info, warning, dan error logs
-- **Struktur Modular**: Class-based dengan utility functions
+- **Navigation Testing**: 6 station pages (Petangoran & Kalimantan + Station 1 & 2)
+- **Sensor Validation**: 9 parameter IoT (Temperature, Humidity, Wind Speed/Direction, Rain Gauge, dll)
+- **Visual Elements**: Canvas/SVG charts validation
+- **Download Feature**: Testing functionality download
+- **PDF Reports**: Laporan lengkap dengan hasil testing
 
-## 📦 Instalasi
-
-### 1. Clone atau Download Project
-```bash
-git clone <repository-url>
-cd solunimun-test
-```
-
-### 2. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Pastikan Chrome Browser Terinstall
-Script ini menggunakan Chrome WebDriver yang akan otomatis didownload oleh webdriver-manager.
-
-## 🏃‍♂️ Cara Menjalankan
-
-### 🎯 Metode 1: Simple Runner (Direkomendasikan)
-```bash
-python simple_runner.py
-```
-
-### 🚀 Metode 2: Otomatis (Windows)
-```bash
-run_tests.bat
-```
-
-### ⚙️ Metode 3: Manual
-```bash
-cd automation_tests
-python iot_dashboard_tester.py
-```
-
-### 🎛️ Metode 4: Interactive (Jika tidak ada masalah import)
-```bash
-python quick_start.py
-```
-
-### Menjalankan dengan Konfigurasi Custom
-Edit file `utils/config.py` untuk menyesuaikan:
-- URL aplikasi
-- Timeout values
-- Password untuk testing
-- Chrome options
-
-## 📁 Struktur Project
+## 📋 Struktur Directory
 
 ```
 solunimun-test/
-├── requirements.txt                 # Dependencies
 ├── automation_tests/
-│   ├── iot_dashboard_tester.py     # Script utama
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── config.py               # Konfigurasi testing
-│   │   └── helpers.py              # Utility functions
-│   └── reports/                    # Output logs & reports
-└── README.md
+│   └── iot_testing.py          # Main testing script
+├── reports/                    # PDF reports (auto-generated)
+│   └── iot_test_report_*.pdf   # Testing reports
+└── README.md                   # Documentation
 ```
 
-## 🧪 Test Cases
+## 🚀 Installation & Setup
 
-### 1. **Inisialisasi WebDriver**
-- Setup Chrome WebDriver dengan webdriver-manager
-- Konfigurasi download directory
-- Window size dan options
+### 1. Install Dependencies
 
-### 2. **Verifikasi Halaman Utama**
-- ✅ Judul halaman memuat "Microclimate Dashboard"
-- ✅ Elemen navigasi "Home" ada
-- ✅ Elemen navigasi "Dashboard" ada
-
-### 3. **Validasi Visualisasi Data**
-- ✅ Deteksi Chart.js (`<canvas>` elements)
-- ✅ Deteksi JustGage untuk suhu (`<svg>` elements)
-- ✅ Deteksi JustGage untuk kelembapan
-- ⚠️ Handle "No Data" atau "Alat Rusak" (warning, bukan error)
-
-### 4. **Testing Filter Waktu**
-- ✅ Klik filter "1 Hari"
-- ✅ Klik filter "7 Hari"  
-- ✅ Klik filter "30 Hari"
-- ✅ Wait for chart updates (explicit wait)
-- ✅ Optimal delays between interactions
-
-### 5. **Testing Download + Password**
-- ✅ Klik tombol "Download Data"
-- ✅ Verifikasi popup password muncul
-- ✅ Test password salah → pesan error
-- ✅ Test password benar → file terdownload
-- ✅ Verifikasi file di folder Downloads
-
-## ⚙️ Konfigurasi
-
-### URL dan Timeout
-```python
-BASE_URL = "https://iot-fakeapi.vercel.app/"  # Sesuaikan dengan aplikasi Anda
-DEFAULT_TIMEOUT = 30                # Timeout untuk explicit waits
+```bash
+pip install selenium webdriver-manager fpdf2
 ```
 
-### Credentials
-```python
-CORRECT_PASSWORD = "admin123"       # Password yang benar
-WRONG_PASSWORD = "wrongpass"        # Password salah untuk testing
+### 2. Run Testing
+
+```bash
+cd c:\programming\solunimun-test
+python automation_tests\iot_testing.py
 ```
+
+## 📊 Test Coverage
+
+| Test Category | Description | Target |
+|---------------|-------------|---------|
+| **WebDriver Init** | Chrome WebDriver initialization | Auto-managed ChromeDriver |
+| **Dashboard Loading** | Main dashboard accessibility | https://iot-fakeapi.vercel.app/ |
+| **Station Navigation** | 6 station pages access | Petangoran/Kalimantan + Station 1/2 |
+| **Sensor Validation** | 9 IoT parameters extraction | Temperature, Humidity, Wind, etc. |
+| **Visual Elements** | Canvas/SVG charts detection | Dashboard charts/graphs |
+| **Download Feature** | Download functionality testing | Download links/buttons |
+| **PDF Generation** | Comprehensive report creation | Auto-generated reports |
+
+## 🌡️ IoT Sensor Parameters (9 Parameters)
+
+1. **Timestamp** - Data collection time
+2. **Temperature** - Air temperature (°C)
+3. **Humidity** - Relative humidity (%)
+4. **Wind Direction** - Wind direction (degrees)
+5. **Wind Speed** - Wind speed (m/s)
+6. **Rain Gauge** - Rainfall measurement (mm)
+7. **Pyrano** - Solar radiation (W/m²)
+8. **Air Pressure** - Atmospheric pressure (hPa)
+9. **Watertemp** - Water temperature (°C)
+
+## 📄 Report Features
+
+- **Test Summary**: Pass/fail statistics
+- **Detailed Results**: Individual test results with timestamps
+- **Station Coverage**: Navigation success for each station
+- **Sensor Completeness**: 9-parameter validation results
+- **Visual Evidence**: Screenshots and element detection
+- **Performance Metrics**: Test duration and success rates
+
+## 🎨 Output Examples
+
+```
+🚀 Starting IoT Dashboard Comprehensive Testing...
+🔧 Test 1: WebDriver Initialization
+✅ Chrome WebDriver initialized successfully
+🌐 Test 2: Dashboard Loading  
+✅ Dashboard loaded successfully
+🚉 Navigating to Petangoran Main...
+✅ Petangoran Main loaded successfully
+📈 Found 5 sensors in Petangoran_Main
+   - Temperature: 25.5°C
+   - Humidity: 65%
+   - Wind Speed: 2.3 m/s
+📊 Sensor completeness: 7/9 (77.8%)
+📄 PDF report created: iot_test_report_20241123_143022.pdf
+🎉 OVERALL: TESTING SUCCESSFUL!
+```
+
+## ⚙️ Configuration
 
 ### Chrome Options
-```python
-CHROME_OPTIONS = [
-    "--no-sandbox",
-    "--disable-dev-shm-usage", 
-    "--disable-gpu",
-    "--window-size=1920,1080"
-]
-HEADLESS_MODE = False              # True untuk background testing
-```
+- Disabled web security for CORS
+- Window size: 1920x1080
+- No sandbox mode
+- Extensions disabled
 
-## 📊 Output dan Logging
+### Timeouts
+- Default wait: 30 seconds
+- Page load: 3 seconds
+- Element detection: Auto-retry
 
-### Console Output
-Script akan menampilkan progress testing secara real-time dengan emoji dan warna:
-```
-🚀 Menginisialisasi Chrome WebDriver...
-✅ Chrome WebDriver berhasil diinisialisasi
-🌐 Membuka URL: https://iot-fakeapi.vercel.app/
-✅ Halaman dashboard berhasil dimuat
-🔍 Memverifikasi halaman utama...
-```
-
-### Log Files
-Log lengkap disimpan di `reports/iot_dashboard_test_YYYYMMDD_HHMMSS.log`
-
-### Test Results Summary
-```
-📊 HASIL PENGUJIAN OTOMATIS WEB DASHBOARD IOT
-================================================================================
-Webdriver Init: ✅ BERHASIL
-Dashboard Open: ✅ BERHASIL  
-Main Page Verify: ✅ BERHASIL
-Data Visualization: ✅ BERHASIL
-Time Filters: ✅ BERHASIL
-Download Feature: ✅ BERHASIL
---------------------------------------------------------------------------------
-Total Keberhasilan: 6/6 (100.0%)
-🎉 PENGUJIAN BERHASIL - Dashboard IoT berfungsi dengan baik!
-```
+### Success Thresholds
+- Sensor completeness: ≥60% (minimum 5/9 parameters)
+- Overall success: ≥60% of all tests passed
 
 ## 🔧 Troubleshooting
 
-### Common Issues:
+### Common Issues
 
-**1. ✅ Import Errors (RESOLVED)**
-Import errors di `quick_start.py` dan `advanced_example.py` sudah diperbaiki dengan menggunakan subprocess approach. Semua script sekarang berjalan tanpa masalah dependency.
-
-**2. ChromeDriver Error**
-- Pastikan Chrome browser terinstall
-- webdriver-manager akan otomatis download ChromeDriver
-
-**3. Timeout Errors** 
-- Tingkatkan nilai `DEFAULT_TIMEOUT` di config.py
-- Pastikan website https://iot-fakeapi.vercel.app/ dapat diakses
-
-**4. Element Not Found**
-- Periksa selector di config.py
-- Sesuaikan dengan struktur HTML aplikasi yang baru
-
-**5. Download Test Gagal**
-- Pastikan folder Downloads dapat diakses
-- Cek permission folder Downloads
-
-**6. Website Tidak Dapat Diakses**
-- Pastikan koneksi internet stabil
-- Cek apakah https://iot-fakeapi.vercel.app/ dapat dibuka di browser
-
-## 🎯 Customization untuk Aplikasi Anda
-
-### 1. Sesuaikan Selectors
-Edit `utils/config.py` pada bagian `SELECTORS`:
-```python
-SELECTORS = {
-    "navigation": {
-        "home": "//a[contains(text(), 'Home')]",  # Sesuaikan selector
-        "dashboard": "//button[@id='dashboard-nav']"  # Contoh ID selector
-    }
-}
+**ChromeDriver Error:**
+```
+Solution: webdriver-manager handles auto-download
 ```
 
-### 2. Tambah Test Cases
-Extend class `IoTDashboardTester` dengan method baru:
-```python
-def test_custom_feature(self) -> bool:
-    """Testing fitur kustom Anda"""
-    # Implementasi testing
-    pass
+**Page Loading Timeout:**
+```
+- Check internet connection
+- Verify target URL accessibility
+- Increase timeout in script if needed
 ```
 
-### 3. Custom Assertions
-Tambahkan validasi spesifik untuk aplikasi:
-```python
-def verify_sensor_data(self) -> bool:
-    """Verifikasi data sensor spesifik"""
-    # Custom validation logic
-    pass
+**Sensor Data Not Found:**
+```
+- Script includes mock data for demonstration
+- Pattern matching covers multiple formats
+- Success threshold allows partial data
 ```
 
-## 📈 CI/CD Integration
-
-Script mengembalikan exit code:
-- `0`: Semua test berhasil
-- `1`: Ada test yang gagal
-
-Untuk CI/CD pipeline:
-```bash
-python automation_tests/iot_dashboard_tester.py
-if [ $? -eq 0 ]; then
-    echo "✅ All tests passed"
-else
-    echo "❌ Some tests failed"
-    exit 1
-fi
+**PDF Generation Failed:**
+```
+- Check write permissions in reports/ directory
+- Verify fpdf2 installation
+- Manual directory creation if needed
 ```
 
-## 🤝 Contributing
+## 📝 Technical Details
 
-1. Fork repository ini
-2. Buat feature branch (`git checkout -b feature/new-test`)
-3. Commit changes (`git commit -am 'Add new test case'`)
-4. Push ke branch (`git push origin feature/new-test`)
-5. Create Pull Request
+### Technology Stack
+- **Python 3.7+**: Main scripting language
+- **Selenium WebDriver**: Browser automation
+- **webdriver-manager**: ChromeDriver management
+- **FPDF2**: PDF report generation
+- **Chrome Browser**: Testing target browser
 
-## 📝 License
+### Architecture
+- **Class-based Design**: IoTDashboardTester main class
+- **Modular Testing**: Individual test methods
+- **Error Handling**: Comprehensive exception management
+- **Logging**: Detailed test execution logs
+- **Reporting**: Automated PDF generation
 
-MIT License - Silakan gunakan untuk keperluan skripsi dan project lainnya.
+### Performance
+- **Multi-page Navigation**: 6 station pages
+- **Pattern Matching**: Multiple regex patterns for sensor detection
+- **Resource Management**: Automatic cleanup
+- **Report Generation**: Structured PDF with charts and statistics
 
-## 👨‍💻 Author
+## 📞 Support
 
-**QA Automation Engineer**  
-Script ini dibuat khusus untuk kebutuhan skripsi Web Dashboard IoT berbasis React.js.
+Untuk pertanyaan atau issues terkait testing script:
+
+1. **Check logs**: Console output untuk debugging
+2. **Verify URL**: Pastikan https://iot-fakeapi.vercel.app/ accessible
+3. **Update dependencies**: `pip install --upgrade selenium webdriver-manager fpdf2`
+4. **Manual testing**: Test individual functions jika diperlukan
 
 ---
 
-**Happy Testing! 🚀**
+**Author**: IoT Dashboard Automation Team  
+**Version**: 1.0.0  
+**Last Updated**: November 2024  
+**Target**: https://iot-fakeapi.vercel.app/
