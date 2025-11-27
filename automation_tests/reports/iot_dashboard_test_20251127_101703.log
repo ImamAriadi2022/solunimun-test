@@ -1,0 +1,85 @@
+2025-11-27 10:17:03,807 - INFO - 🚀 Memulai pengujian otomatis Web Dashboard IoT...
+2025-11-27 10:17:03,807 - INFO - 🚀 Menginisialisasi Chrome WebDriver...
+2025-11-27 10:17:03,808 - WARNING - ⚠️  ChromeDriverManager gagal: cannot access local variable 'ChromeDriverManager' where it is not associated with a value
+2025-11-27 10:17:03,808 - INFO - 🔄 Mencoba dengan ChromeDriverManager cache clear...
+2025-11-27 10:17:03,809 - INFO - ====== WebDriver manager ======
+2025-11-27 10:17:06,133 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 10:17:06,867 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 10:17:07,447 - INFO - There is no [win64] chromedriver "142.0.7444.175" for browser google-chrome "142.0.7444" in cache
+2025-11-27 10:17:07,448 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 10:17:08,997 - INFO - WebDriver version 142.0.7444.175 selected
+2025-11-27 10:17:09,007 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/win32/chromedriver-win32.zip
+2025-11-27 10:17:09,007 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/win32/chromedriver-win32.zip
+2025-11-27 10:17:09,587 - INFO - Driver downloading response is 200
+2025-11-27 10:17:17,748 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-27 10:17:18,503 - INFO - Driver has been saved in cache [C:\Users\imama\.wdm\drivers\chromedriver\win64\142.0.7444.175]
+2025-11-27 10:17:18,554 - ERROR - ❌ Gagal menginisialisasi WebDriver: [WinError 193] %1 is not a valid Win32 application
+2025-11-27 10:17:18,554 - INFO - 🔄 Mencoba fallback tanpa webdriver-manager...
+2025-11-27 10:17:20,520 - INFO - ✅ Fallback berhasil - menggunakan system ChromeDriver
+2025-11-27 10:17:20,521 - INFO - 🌐 Membuka URL: https://iot-fakeapi.vercel.app/
+2025-11-27 10:17:21,918 - INFO - ✅ Halaman dashboard berhasil dimuat
+2025-11-27 10:17:21,918 - INFO - 🔍 Memverifikasi halaman utama...
+2025-11-27 10:17:52,310 - WARNING - ⚠️  Judul halaman tidak mengandung 'Microclimate Dashboard'. Actual: 'Microclimate'
+2025-11-27 10:17:52,330 - INFO - ✅ Elemen navigasi 'Home' ditemukan
+2025-11-27 10:17:52,348 - INFO - ✅ Elemen navigasi 'Dashboard' ditemukan
+2025-11-27 10:17:52,349 - INFO - 📊 Verifikasi halaman utama: 2/3 (66.7%) berhasil
+2025-11-27 10:17:52,350 - INFO - 📊 Memvalidasi visualisasi data...
+2025-11-27 10:18:22,675 - WARNING - ⚠️  Timeout saat mencari elemen Chart.js
+2025-11-27 10:18:23,119 - WARNING - ⚠️  JustGage untuk suhu tidak ditemukan
+2025-11-27 10:18:23,120 - WARNING - ⚠️  JustGage untuk kelembapan tidak ditemukan
+2025-11-27 10:18:23,120 - INFO - 📊 Validasi visualisasi data: 0/3 (0.0%) berhasil
+2025-11-27 10:18:23,120 - INFO - ⏰ Testing filter waktu...
+2025-11-27 10:18:23,120 - INFO - 🔄 Testing filter: 1 Hari
+2025-11-27 10:18:53,316 - WARNING - ⚠️  Timeout saat testing filter '1 Hari'
+2025-11-27 10:18:53,317 - INFO - 🔄 Testing filter: 7 Hari
+2025-11-27 10:19:23,411 - WARNING - ⚠️  Timeout saat testing filter '7 Hari'
+2025-11-27 10:19:23,412 - INFO - 🔄 Testing filter: 30 Hari
+2025-11-27 10:19:53,478 - WARNING - ⚠️  Timeout saat testing filter '30 Hari'
+2025-11-27 10:19:53,479 - INFO - 📊 Testing filter waktu: 0/3 (0.0%) berhasil
+2025-11-27 10:19:53,479 - INFO - 💾 Testing fitur download dengan proteksi password...
+2025-11-27 10:19:55,124 - WARNING - ⚠️  Error saat mengklik tombol download: Message: element click intercepted: Element is not clickable at point (677, -775)
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7974aa235
+	0x7ff797202630
+	0x7ff796f916dd
+	0x7ff796ff24c9
+	0x7ff796fefe4e
+	0x7ff796fecd71
+	0x7ff796febc10
+	0x7ff796fdd3a8
+	0x7ff797012b0a
+	0x7ff796fdcc36
+	0x7ff79703baba
+	0x7ff796fdb0ed
+	0x7ff796fdbf63
+	0x7ff7974d5d60
+	0x7ff7974cfe8a
+	0x7ff7974f1005
+	0x7ff79721d71e
+	0x7ff797224e1f
+	0x7ff79720b7c4
+	0x7ff79720b97f
+	0x7ff7971f18e8
+	0x7ffe069ee8d7
+	0x7ffe088cc53c
+
+2025-11-27 10:20:25,240 - WARNING - ⚠️  Pesan error untuk password salah tidak muncul
+2025-11-27 10:20:55,302 - WARNING - ⚠️  Timeout saat melakukan download dengan password benar
+2025-11-27 10:20:55,303 - INFO - 📊 Testing fitur download: 0/3 (0.0%) berhasil
+2025-11-27 10:20:55,303 - INFO - 
+================================================================================
+2025-11-27 10:20:55,304 - INFO - 📊 HASIL PENGUJIAN OTOMATIS WEB DASHBOARD IOT
+2025-11-27 10:20:55,304 - INFO - ================================================================================
+2025-11-27 10:20:55,305 - INFO - Webdriver Init: ✅ BERHASIL
+2025-11-27 10:20:55,305 - INFO - Dashboard Open: ✅ BERHASIL
+2025-11-27 10:20:55,305 - INFO - Main Page Verify: ❌ GAGAL
+2025-11-27 10:20:55,305 - INFO - Data Visualization: ❌ GAGAL
+2025-11-27 10:20:55,305 - INFO - Time Filters: ❌ GAGAL
+2025-11-27 10:20:55,305 - INFO - Download Feature: ❌ GAGAL
+2025-11-27 10:20:55,305 - INFO - --------------------------------------------------------------------------------
+2025-11-27 10:20:55,306 - INFO - Total Keberhasilan: 2/6 (33.3%)
+2025-11-27 10:20:55,306 - WARNING - ⚠️  PENGUJIAN PARSIAL - Ada beberapa fitur yang perlu diperbaiki
+2025-11-27 10:20:55,306 - INFO - ================================================================================
+2025-11-27 10:20:57,589 - INFO - 🧹 WebDriver berhasil ditutup
