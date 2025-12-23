@@ -1,0 +1,306 @@
+🚀 Initializing IoT Dashboard Tester [base_url=https://iot-fakeapi.vercel.app/, timeout=30]
+{"timestamp": "2025-12-23T10:23:07.343014", "level": "INFO", "message": "🚀 Initializing IoT Dashboard Tester", "base_url": "https://iot-fakeapi.vercel.app/", "timeout": 30}
+🚀 Starting IoT Dashboard Comprehensive Testing...
+{"timestamp": "2025-12-23T10:23:07.344567", "level": "INFO", "message": "🚀 Starting IoT Dashboard Comprehensive Testing..."}
+🔧 Test 1: Inisialisasi WebDriver
+{"timestamp": "2025-12-23T10:23:07.345709", "level": "INFO", "message": "🔧 Test 1: Inisialisasi WebDriver"}
+🚀 Initializing Chrome WebDriver...
+{"timestamp": "2025-12-23T10:23:07.347244", "level": "INFO", "message": "🚀 Initializing Chrome WebDriver..."}
+✅ Chrome WebDriver initialized successfully
+{"timestamp": "2025-12-23T10:23:25.394635", "level": "INFO", "message": "✅ Chrome WebDriver initialized successfully"}
+⚠️ Performance threshold exceeded for initialize_webdriver [operation=webdriver_initialization, duration=18.05s, threshold=10.00s, exceeded_by=8.05s]
+{"timestamp": "2025-12-23T10:23:25.396427", "level": "WARNING", "message": "⚠️ Performance threshold exceeded for initialize_webdriver", "operation": "webdriver_initialization", "duration": "18.05s", "threshold": "10.00s", "exceeded_by": "8.05s"}
+⏱️ Webdriver_initialization: initialize_webdriver [duration=18.05s, status=❌ FAIL, success=True]
+{"timestamp": "2025-12-23T10:23:25.398719", "level": "INFO", "message": "⏱️ Webdriver_initialization: initialize_webdriver", "duration": "18.05s", "status": "❌ FAIL", "success": true}
+📸 Screenshot saved [test_name=Inisialisasi WebDriver, filename=Inisialisasi_WebDriver_20251223_102325.png]
+{"timestamp": "2025-12-23T10:23:26.157812", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Inisialisasi WebDriver", "filename": "Inisialisasi_WebDriver_20251223_102325.png"}
+📝 Test result recorded: Inisialisasi WebDriver [status=BERHASIL, details=Chrome WebDriver dengan webdriver-manager, duration=N/A]
+{"timestamp": "2025-12-23T10:23:26.159619", "level": "INFO", "message": "📝 Test result recorded: Inisialisasi WebDriver", "status": "BERHASIL", "details": "Chrome WebDriver dengan webdriver-manager", "duration": "N/A"}
+🌐 Test 2: Memuat Dashboard
+{"timestamp": "2025-12-23T10:23:26.161477", "level": "INFO", "message": "🌐 Test 2: Memuat Dashboard"}
+🌐 Opening URL: https://iot-fakeapi.vercel.app/
+{"timestamp": "2025-12-23T10:23:26.162412", "level": "INFO", "message": "🌐 Opening URL: https://iot-fakeapi.vercel.app/"}
+✅ Dashboard loaded successfully [page_load_time=2.12s]
+{"timestamp": "2025-12-23T10:23:30.288315", "level": "INFO", "message": "✅ Dashboard loaded successfully", "page_load_time": "2.12s"}
+⏱️ Page_load: open_dashboard [duration=4.13s, status=✅ PASS, success=True]
+{"timestamp": "2025-12-23T10:23:30.289406", "level": "INFO", "message": "⏱️ Page_load: open_dashboard", "duration": "4.13s", "status": "✅ PASS", "success": true}
+📸 Screenshot saved [test_name=Pemuatan Dashboard, filename=Pemuatan_Dashboard_20251223_102330.png]
+{"timestamp": "2025-12-23T10:23:30.495220", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Pemuatan Dashboard", "filename": "Pemuatan_Dashboard_20251223_102330.png"}
+📝 Test result recorded: Pemuatan Dashboard [status=BERHASIL, details=Akses ke https://iot-fakeapi.vercel.app/, duration=N/A]
+{"timestamp": "2025-12-23T10:23:30.496381", "level": "INFO", "message": "📝 Test result recorded: Pemuatan Dashboard", "status": "BERHASIL", "details": "Akses ke https://iot-fakeapi.vercel.app/", "duration": "N/A"}
+🌡️ Test 3: Sensor Data Validation
+{"timestamp": "2025-12-23T10:23:30.497529", "level": "INFO", "message": "🌡️ Test 3: Sensor Data Validation"}
+🌡️ Memulai validasi sensor secara individual...
+{"timestamp": "2025-12-23T10:23:30.498274", "level": "INFO", "message": "🌡️ Memulai validasi sensor secara individual..."}
+🚉 Navigating to Petangoran Main...
+{"timestamp": "2025-12-23T10:23:30.499125", "level": "INFO", "message": "🚉 Navigating to Petangoran Main..."}
+✅ Petangoran Main loaded successfully [page_load_time=0.52s, url=https://iot-fakeapi.vercel.app/petengoran]
+{"timestamp": "2025-12-23T10:23:34.029916", "level": "INFO", "message": "✅ Petangoran Main loaded successfully", "page_load_time": "0.52s", "url": "https://iot-fakeapi.vercel.app/petengoran"}
+🚉 Navigating to Petangoran Station 1...
+{"timestamp": "2025-12-23T10:23:34.030957", "level": "INFO", "message": "🚉 Navigating to Petangoran Station 1..."}
+⚠️ Petangoran Station 1 not available (404) [url=https://iot-fakeapi.vercel.app/petengoran/station1]
+{"timestamp": "2025-12-23T10:23:38.141553", "level": "WARNING", "message": "⚠️ Petangoran Station 1 not available (404)", "url": "https://iot-fakeapi.vercel.app/petengoran/station1"}
+🚉 Navigating to Petangoran Station 2...
+{"timestamp": "2025-12-23T10:23:38.142993", "level": "INFO", "message": "🚉 Navigating to Petangoran Station 2..."}
+⚠️ Petangoran Station 2 not available (404) [url=https://iot-fakeapi.vercel.app/petengoran/station2]
+{"timestamp": "2025-12-23T10:23:42.118615", "level": "WARNING", "message": "⚠️ Petangoran Station 2 not available (404)", "url": "https://iot-fakeapi.vercel.app/petengoran/station2"}
+🚉 Navigating to Kalimantan Main...
+{"timestamp": "2025-12-23T10:23:42.119690", "level": "INFO", "message": "🚉 Navigating to Kalimantan Main..."}
+✅ Kalimantan Main loaded successfully [page_load_time=0.77s, url=https://iot-fakeapi.vercel.app/kalimantan]
+{"timestamp": "2025-12-23T10:23:45.901733", "level": "INFO", "message": "✅ Kalimantan Main loaded successfully", "page_load_time": "0.77s", "url": "https://iot-fakeapi.vercel.app/kalimantan"}
+🚉 Navigating to Kalimantan Station 1...
+{"timestamp": "2025-12-23T10:23:45.903299", "level": "INFO", "message": "🚉 Navigating to Kalimantan Station 1..."}
+✅ Kalimantan Station 1 loaded successfully [page_load_time=0.58s, url=https://iot-fakeapi.vercel.app/kalimantan/station1]
+{"timestamp": "2025-12-23T10:23:49.504575", "level": "INFO", "message": "✅ Kalimantan Station 1 loaded successfully", "page_load_time": "0.58s", "url": "https://iot-fakeapi.vercel.app/kalimantan/station1"}
+🚉 Navigating to Kalimantan Station 2...
+{"timestamp": "2025-12-23T10:23:49.505579", "level": "INFO", "message": "🚉 Navigating to Kalimantan Station 2..."}
+✅ Kalimantan Station 2 loaded successfully [page_load_time=0.53s, url=https://iot-fakeapi.vercel.app/kalimantan/station2]
+{"timestamp": "2025-12-23T10:23:53.046072", "level": "INFO", "message": "✅ Kalimantan Station 2 loaded successfully", "page_load_time": "0.53s", "url": "https://iot-fakeapi.vercel.app/kalimantan/station2"}
+📊 Navigation complete [accessed_pages=4, total_pages=6]
+{"timestamp": "2025-12-23T10:23:53.047145", "level": "INFO", "message": "📊 Navigation complete", "accessed_pages": 4, "total_pages": 6}
+⏱️ Navigation: navigate_to_station_pages [duration=22.55s, status=✅ PASS, success=True]
+{"timestamp": "2025-12-23T10:23:53.048005", "level": "INFO", "message": "⏱️ Navigation: navigate_to_station_pages", "duration": "22.55s", "status": "✅ PASS", "success": true}
+📸 Screenshot saved [test_name=Navigasi Halaman Stasiun, filename=Navigasi_Halaman_Stasiun_20251223_102353.png]
+{"timestamp": "2025-12-23T10:23:53.216170", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Navigasi Halaman Stasiun", "filename": "Navigasi_Halaman_Stasiun_20251223_102353.png"}
+📝 Test result recorded: Navigasi Halaman Stasiun [status=BERHASIL, details=Berhasil mengakses 4 halaman stasiun, duration=N/A]
+{"timestamp": "2025-12-23T10:23:53.217413", "level": "INFO", "message": "📝 Test result recorded: Navigasi Halaman Stasiun", "status": "BERHASIL", "details": "Berhasil mengakses 4 halaman stasiun", "duration": "N/A"}
+📈 Sensor data extracted [page=Petangoran_Main, sensors_found=2, sensor_types=['Temperature', 'Humidity']]
+{"timestamp": "2025-12-23T10:23:56.671844", "level": "INFO", "message": "📈 Sensor data extracted", "page": "Petangoran_Main", "sensors_found": 2, "sensor_types": ["Temperature", "Humidity"]}
+⏱️ Data_extraction: extract_sensor_data [duration=0.02s, status=✅ PASS, success=True]
+{"timestamp": "2025-12-23T10:23:56.672950", "level": "INFO", "message": "⏱️ Data_extraction: extract_sensor_data", "duration": "0.02s", "status": "✅ PASS", "success": true}
+ℹ️ Data mock ditambahkan untuk demonstrasi
+{"timestamp": "2025-12-23T10:23:56.673615", "level": "INFO", "message": "ℹ️ Data mock ditambahkan untuk demonstrasi"}
+📈 Sensor data extracted [page=Kalimantan_Main, sensors_found=2, sensor_types=['Temperature', 'Humidity']]
+{"timestamp": "2025-12-23T10:24:00.174841", "level": "INFO", "message": "📈 Sensor data extracted", "page": "Kalimantan_Main", "sensors_found": 2, "sensor_types": ["Temperature", "Humidity"]}
+⏱️ Data_extraction: extract_sensor_data [duration=0.02s, status=✅ PASS, success=True]
+{"timestamp": "2025-12-23T10:24:00.176011", "level": "INFO", "message": "⏱️ Data_extraction: extract_sensor_data", "duration": "0.02s", "status": "✅ PASS", "success": true}
+ℹ️ Data mock ditambahkan untuk demonstrasi
+{"timestamp": "2025-12-23T10:24:00.176948", "level": "INFO", "message": "ℹ️ Data mock ditambahkan untuk demonstrasi"}
+📈 Sensor data extracted [page=Kalimantan_Station_1, sensors_found=6, sensor_types=['Temperature', 'Humidity', 'Pressure', 'Wind Direction', 'Rain Gauge', 'Pyrano']]
+{"timestamp": "2025-12-23T10:24:04.006389", "level": "INFO", "message": "📈 Sensor data extracted", "page": "Kalimantan_Station_1", "sensors_found": 6, "sensor_types": ["Temperature", "Humidity", "Pressure", "Wind Direction", "Rain Gauge", "Pyrano"]}
+⏱️ Data_extraction: extract_sensor_data [duration=0.19s, status=✅ PASS, success=True]
+{"timestamp": "2025-12-23T10:24:04.007764", "level": "INFO", "message": "⏱️ Data_extraction: extract_sensor_data", "duration": "0.19s", "status": "✅ PASS", "success": true}
+📈 Sensor data extracted [page=Kalimantan_Station_2, sensors_found=2, sensor_types=['Temperature', 'Humidity']]
+{"timestamp": "2025-12-23T10:24:07.515972", "level": "INFO", "message": "📈 Sensor data extracted", "page": "Kalimantan_Station_2", "sensors_found": 2, "sensor_types": ["Temperature", "Humidity"]}
+⏱️ Data_extraction: extract_sensor_data [duration=0.02s, status=✅ PASS, success=True]
+{"timestamp": "2025-12-23T10:24:07.517038", "level": "INFO", "message": "⏱️ Data_extraction: extract_sensor_data", "duration": "0.02s", "status": "✅ PASS", "success": true}
+ℹ️ Data mock ditambahkan untuk demonstrasi
+{"timestamp": "2025-12-23T10:24:07.517961", "level": "INFO", "message": "ℹ️ Data mock ditambahkan untuk demonstrasi"}
+📸 Screenshot saved [test_name=Validasi Timestamp, filename=Validasi_Timestamp_20251223_102407.png]
+{"timestamp": "2025-12-23T10:24:07.665612", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Validasi Timestamp", "filename": "Validasi_Timestamp_20251223_102407.png"}
+📝 Test result recorded: Validasi Timestamp [status=BERHASIL, details=Ditemukan: 2025-12-23 10:24:07, duration=N/A]
+{"timestamp": "2025-12-23T10:24:07.666660", "level": "INFO", "message": "📝 Test result recorded: Validasi Timestamp", "status": "BERHASIL", "details": "Ditemukan: 2025-12-23 10:24:07", "duration": "N/A"}
+📸 Screenshot saved [test_name=Validasi Sht85Temp, filename=Validasi_Sht85Temp_20251223_102407.png]
+{"timestamp": "2025-12-23T10:24:07.781666", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Validasi Sht85Temp", "filename": "Validasi_Sht85Temp_20251223_102407.png"}
+📝 Test result recorded: Validasi Sht85Temp [status=BERHASIL, details=Ditemukan: 25.5°C, duration=N/A]
+{"timestamp": "2025-12-23T10:24:07.782923", "level": "INFO", "message": "📝 Test result recorded: Validasi Sht85Temp", "status": "BERHASIL", "details": "Ditemukan: 25.5°C", "duration": "N/A"}
+📸 Screenshot saved [test_name=Validasi Humidity, filename=Validasi_Humidity_20251223_102407.png]
+{"timestamp": "2025-12-23T10:24:07.918638", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Validasi Humidity", "filename": "Validasi_Humidity_20251223_102407.png"}
+📝 Test result recorded: Validasi Humidity [status=BERHASIL, details=Ditemukan: 65%, duration=N/A]
+{"timestamp": "2025-12-23T10:24:07.919620", "level": "INFO", "message": "📝 Test result recorded: Validasi Humidity", "status": "BERHASIL", "details": "Ditemukan: 65%", "duration": "N/A"}
+📸 Screenshot saved [test_name=Validasi Arah Angin, filename=Validasi_Arah_Angin_20251223_102407.png]
+{"timestamp": "2025-12-23T10:24:08.027865", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Validasi Arah Angin", "filename": "Validasi_Arah_Angin_20251223_102407.png"}
+📝 Test result recorded: Validasi Arah Angin [status=BERHASIL, details=Ditemukan: 180°, duration=N/A]
+{"timestamp": "2025-12-23T10:24:08.028843", "level": "INFO", "message": "📝 Test result recorded: Validasi Arah Angin", "status": "BERHASIL", "details": "Ditemukan: 180°", "duration": "N/A"}
+📸 Screenshot saved [test_name=Validasi Kecepatan Angin, filename=Validasi_Kecepatan_Angin_20251223_102408.png]
+{"timestamp": "2025-12-23T10:24:08.150717", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Validasi Kecepatan Angin", "filename": "Validasi_Kecepatan_Angin_20251223_102408.png"}
+📝 Test result recorded: Validasi Kecepatan Angin [status=BERHASIL, details=Ditemukan: 2.3 m/s, duration=N/A]
+{"timestamp": "2025-12-23T10:24:08.152133", "level": "INFO", "message": "📝 Test result recorded: Validasi Kecepatan Angin", "status": "BERHASIL", "details": "Ditemukan: 2.3 m/s", "duration": "N/A"}
+📸 Screenshot saved [test_name=Validasi Rain Gauge, filename=Validasi_Rain_Gauge_20251223_102408.png]
+{"timestamp": "2025-12-23T10:24:08.288090", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Validasi Rain Gauge", "filename": "Validasi_Rain_Gauge_20251223_102408.png"}
+📝 Test result recorded: Validasi Rain Gauge [status=BERHASIL, details=Ditemukan: 0.5 mm, duration=N/A]
+{"timestamp": "2025-12-23T10:24:08.289159", "level": "INFO", "message": "📝 Test result recorded: Validasi Rain Gauge", "status": "BERHASIL", "details": "Ditemukan: 0.5 mm", "duration": "N/A"}
+📸 Screenshot saved [test_name=Validasi Pyrano, filename=Validasi_Pyrano_20251223_102408.png]
+{"timestamp": "2025-12-23T10:24:08.417096", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Validasi Pyrano", "filename": "Validasi_Pyrano_20251223_102408.png"}
+📝 Test result recorded: Validasi Pyrano [status=BERHASIL, details=Ditemukan: 450 W/m², duration=N/A]
+{"timestamp": "2025-12-23T10:24:08.418256", "level": "INFO", "message": "📝 Test result recorded: Validasi Pyrano", "status": "BERHASIL", "details": "Ditemukan: 450 W/m²", "duration": "N/A"}
+📸 Screenshot saved [test_name=Validasi Tekanan Udara, filename=Validasi_Tekanan_Udara_20251223_102408.png]
+{"timestamp": "2025-12-23T10:24:08.525572", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Validasi Tekanan Udara", "filename": "Validasi_Tekanan_Udara_20251223_102408.png"}
+📝 Test result recorded: Validasi Tekanan Udara [status=BERHASIL, details=Ditemukan: 1013 hPa, duration=N/A]
+{"timestamp": "2025-12-23T10:24:08.526568", "level": "INFO", "message": "📝 Test result recorded: Validasi Tekanan Udara", "status": "BERHASIL", "details": "Ditemukan: 1013 hPa", "duration": "N/A"}
+📸 Screenshot saved [test_name=Validasi Suhu Air, filename=Validasi_Suhu_Air_20251223_102408.png]
+{"timestamp": "2025-12-23T10:24:08.645172", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Validasi Suhu Air", "filename": "Validasi_Suhu_Air_20251223_102408.png"}
+📝 Test result recorded: Validasi Suhu Air [status=BERHASIL, details=Ditemukan: 22.8°C, duration=N/A]
+{"timestamp": "2025-12-23T10:24:08.646540", "level": "INFO", "message": "📝 Test result recorded: Validasi Suhu Air", "status": "BERHASIL", "details": "Ditemukan: 22.8°C", "duration": "N/A"}
+📊 Kelengkapan sensor: 9/9 (100.0%)
+{"timestamp": "2025-12-23T10:24:08.647499", "level": "INFO", "message": "📊 Kelengkapan sensor: 9/9 (100.0%)"}
+⏱️ Sensor_validation: validate_sensor_data_completeness [duration=38.15s, status=✅ PASS, success=True]
+{"timestamp": "2025-12-23T10:24:08.648435", "level": "INFO", "message": "⏱️ Sensor_validation: validate_sensor_data_completeness", "duration": "38.15s", "status": "✅ PASS", "success": true}
+🎨 Test 4: Visual Elements
+{"timestamp": "2025-12-23T10:24:08.649251", "level": "INFO", "message": "🎨 Test 4: Visual Elements"}
+🎨 Memvalidasi elemen visual dan test popup chart...
+{"timestamp": "2025-12-23T10:24:08.649915", "level": "INFO", "message": "🎨 Memvalidasi elemen visual dan test popup chart..."}
+🔍 Testing charts di Petangoran Station 1...
+{"timestamp": "2025-12-23T10:24:08.650601", "level": "INFO", "message": "🔍 Testing charts di Petangoran Station 1..."}
+📊 Analisis chart di Petangoran Station 1:
+{"timestamp": "2025-12-23T10:24:17.642833", "level": "INFO", "message": "📊 Analisis chart di Petangoran Station 1:"}
+   - Canvas elements: 0
+{"timestamp": "2025-12-23T10:24:17.643796", "level": "INFO", "message": "   - Canvas elements: 0"}
+   - SVG elements: 33
+{"timestamp": "2025-12-23T10:24:17.644466", "level": "INFO", "message": "   - SVG elements: 33"}
+   - Chart divs: 45
+{"timestamp": "2025-12-23T10:24:17.644997", "level": "INFO", "message": "   - Chart divs: 45"}
+   - Sensor charts: 0
+{"timestamp": "2025-12-23T10:24:17.645524", "level": "INFO", "message": "   - Sensor charts: 0"}
+   - Chart scripts: 0
+{"timestamp": "2025-12-23T10:24:17.646231", "level": "INFO", "message": "   - Chart scripts: 0"}
+   - Chart.js detected: False
+{"timestamp": "2025-12-23T10:24:17.646919", "level": "INFO", "message": "   - Chart.js detected: False"}
+   - Total indicators: 78
+{"timestamp": "2025-12-23T10:24:17.647627", "level": "INFO", "message": "   - Total indicators: 78"}
+📸 Screenshot saved [test_name=Charts_Found_Petangoran Station 1, filename=Charts_Found_Petangoran_Statio_20251223_102417.png]
+{"timestamp": "2025-12-23T10:24:17.798112", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Charts_Found_Petangoran Station 1", "filename": "Charts_Found_Petangoran_Statio_20251223_102417.png"}
+✅ Chart terdeteksi di Petangoran Station 1 dengan 78 indikator!
+{"timestamp": "2025-12-23T10:24:17.799231", "level": "INFO", "message": "✅ Chart terdeteksi di Petangoran Station 1 dengan 78 indikator!"}
+🎯 Banyak chart ditemukan di Petangoran Station 1, lanjut ke station berikutnya
+{"timestamp": "2025-12-23T10:24:17.800049", "level": "INFO", "message": "🎯 Banyak chart ditemukan di Petangoran Station 1, lanjut ke station berikutnya"}
+🔍 Testing charts di Petangoran Station 2...
+{"timestamp": "2025-12-23T10:24:17.800834", "level": "INFO", "message": "🔍 Testing charts di Petangoran Station 2..."}
+📊 Analisis chart di Petangoran Station 2:
+{"timestamp": "2025-12-23T10:24:26.511374", "level": "INFO", "message": "📊 Analisis chart di Petangoran Station 2:"}
+   - Canvas elements: 0
+{"timestamp": "2025-12-23T10:24:26.512142", "level": "INFO", "message": "   - Canvas elements: 0"}
+   - SVG elements: 30
+{"timestamp": "2025-12-23T10:24:26.512503", "level": "INFO", "message": "   - SVG elements: 30"}
+   - Chart divs: 40
+{"timestamp": "2025-12-23T10:24:26.512966", "level": "INFO", "message": "   - Chart divs: 40"}
+   - Sensor charts: 0
+{"timestamp": "2025-12-23T10:24:26.513354", "level": "INFO", "message": "   - Sensor charts: 0"}
+   - Chart scripts: 0
+{"timestamp": "2025-12-23T10:24:26.513704", "level": "INFO", "message": "   - Chart scripts: 0"}
+   - Chart.js detected: False
+{"timestamp": "2025-12-23T10:24:26.514052", "level": "INFO", "message": "   - Chart.js detected: False"}
+   - Total indicators: 70
+{"timestamp": "2025-12-23T10:24:26.514416", "level": "INFO", "message": "   - Total indicators: 70"}
+📸 Screenshot saved [test_name=Charts_Found_Petangoran Station 2, filename=Charts_Found_Petangoran_Statio_20251223_102426.png]
+{"timestamp": "2025-12-23T10:24:26.623798", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Charts_Found_Petangoran Station 2", "filename": "Charts_Found_Petangoran_Statio_20251223_102426.png"}
+✅ Chart terdeteksi di Petangoran Station 2 dengan 70 indikator!
+{"timestamp": "2025-12-23T10:24:26.624959", "level": "INFO", "message": "✅ Chart terdeteksi di Petangoran Station 2 dengan 70 indikator!"}
+🎯 Banyak chart ditemukan di Petangoran Station 2, lanjut ke station berikutnya
+{"timestamp": "2025-12-23T10:24:26.625780", "level": "INFO", "message": "🎯 Banyak chart ditemukan di Petangoran Station 2, lanjut ke station berikutnya"}
+🔍 Testing charts di Kalimantan Station 1...
+{"timestamp": "2025-12-23T10:24:26.626420", "level": "INFO", "message": "🔍 Testing charts di Kalimantan Station 1..."}
+📊 Analisis chart di Kalimantan Station 1:
+{"timestamp": "2025-12-23T10:24:35.380290", "level": "INFO", "message": "📊 Analisis chart di Kalimantan Station 1:"}
+   - Canvas elements: 0
+{"timestamp": "2025-12-23T10:24:35.381113", "level": "INFO", "message": "   - Canvas elements: 0"}
+   - SVG elements: 23
+{"timestamp": "2025-12-23T10:24:35.381705", "level": "INFO", "message": "   - SVG elements: 23"}
+   - Chart divs: 30
+{"timestamp": "2025-12-23T10:24:35.382294", "level": "INFO", "message": "   - Chart divs: 30"}
+   - Sensor charts: 0
+{"timestamp": "2025-12-23T10:24:35.382937", "level": "INFO", "message": "   - Sensor charts: 0"}
+   - Chart scripts: 0
+{"timestamp": "2025-12-23T10:24:35.383503", "level": "INFO", "message": "   - Chart scripts: 0"}
+   - Chart.js detected: False
+{"timestamp": "2025-12-23T10:24:35.384059", "level": "INFO", "message": "   - Chart.js detected: False"}
+   - Total indicators: 53
+{"timestamp": "2025-12-23T10:24:35.384600", "level": "INFO", "message": "   - Total indicators: 53"}
+📸 Screenshot saved [test_name=Charts_Found_Kalimantan Station 1, filename=Charts_Found_Kalimantan_Statio_20251223_102435.png]
+{"timestamp": "2025-12-23T10:24:35.507016", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Charts_Found_Kalimantan Station 1", "filename": "Charts_Found_Kalimantan_Statio_20251223_102435.png"}
+✅ Chart terdeteksi di Kalimantan Station 1 dengan 53 indikator!
+{"timestamp": "2025-12-23T10:24:35.508052", "level": "INFO", "message": "✅ Chart terdeteksi di Kalimantan Station 1 dengan 53 indikator!"}
+🎯 Banyak chart ditemukan di Kalimantan Station 1, lanjut ke station berikutnya
+{"timestamp": "2025-12-23T10:24:35.508842", "level": "INFO", "message": "🎯 Banyak chart ditemukan di Kalimantan Station 1, lanjut ke station berikutnya"}
+🔍 Testing charts di Kalimantan Station 2...
+{"timestamp": "2025-12-23T10:24:35.509513", "level": "INFO", "message": "🔍 Testing charts di Kalimantan Station 2..."}
+📊 Analisis chart di Kalimantan Station 2:
+{"timestamp": "2025-12-23T10:24:44.193504", "level": "INFO", "message": "📊 Analisis chart di Kalimantan Station 2:"}
+   - Canvas elements: 0
+{"timestamp": "2025-12-23T10:24:44.194313", "level": "INFO", "message": "   - Canvas elements: 0"}
+   - SVG elements: 5
+{"timestamp": "2025-12-23T10:24:44.194934", "level": "INFO", "message": "   - SVG elements: 5"}
+   - Chart divs: 0
+{"timestamp": "2025-12-23T10:24:44.195551", "level": "INFO", "message": "   - Chart divs: 0"}
+   - Sensor charts: 0
+{"timestamp": "2025-12-23T10:24:44.196075", "level": "INFO", "message": "   - Sensor charts: 0"}
+   - Chart scripts: 0
+{"timestamp": "2025-12-23T10:24:44.196521", "level": "INFO", "message": "   - Chart scripts: 0"}
+   - Chart.js detected: False
+{"timestamp": "2025-12-23T10:24:44.197035", "level": "INFO", "message": "   - Chart.js detected: False"}
+   - Total indicators: 5
+{"timestamp": "2025-12-23T10:24:44.197569", "level": "INFO", "message": "   - Total indicators: 5"}
+📸 Screenshot saved [test_name=Charts_Found_Kalimantan Station 2, filename=Charts_Found_Kalimantan_Statio_20251223_102444.png]
+{"timestamp": "2025-12-23T10:24:44.300089", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Charts_Found_Kalimantan Station 2", "filename": "Charts_Found_Kalimantan_Statio_20251223_102444.png"}
+✅ Chart terdeteksi di Kalimantan Station 2 dengan 5 indikator!
+{"timestamp": "2025-12-23T10:24:44.301189", "level": "INFO", "message": "✅ Chart terdeteksi di Kalimantan Station 2 dengan 5 indikator!"}
+🎯 Banyak chart ditemukan di Kalimantan Station 2, lanjut ke station berikutnya
+{"timestamp": "2025-12-23T10:24:44.302116", "level": "INFO", "message": "🎯 Banyak chart ditemukan di Kalimantan Station 2, lanjut ke station berikutnya"}
+📸 Screenshot saved [test_name=Deteksi Chart Dashboard, filename=Deteksi_Chart_Dashboard_20251223_102444.png]
+{"timestamp": "2025-12-23T10:24:44.423058", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Deteksi Chart Dashboard", "filename": "Deteksi_Chart_Dashboard_20251223_102444.png"}
+📝 Test result recorded: Deteksi Chart Dashboard [status=BERHASIL, details=Chart berhasil terdeteksi di 4 halaman: Petangoran, duration=N/A]
+{"timestamp": "2025-12-23T10:24:44.424076", "level": "INFO", "message": "📝 Test result recorded: Deteksi Chart Dashboard", "status": "BERHASIL", "details": "Chart berhasil terdeteksi di 4 halaman: Petangoran", "duration": "N/A"}
+📊 Total ditemukan 0 canvas dan 91 SVG elements dengan 4 halaman
+{"timestamp": "2025-12-23T10:24:44.425076", "level": "INFO", "message": "📊 Total ditemukan 0 canvas dan 91 SVG elements dengan 4 halaman"}
+⏱️ Visual_validation: validate_visual_elements [duration=35.78s, status=✅ PASS, success=True]
+{"timestamp": "2025-12-23T10:24:44.425951", "level": "INFO", "message": "⏱️ Visual_validation: validate_visual_elements", "duration": "35.78s", "status": "✅ PASS", "success": true}
+💾 Test 5: Download Feature
+{"timestamp": "2025-12-23T10:24:44.426775", "level": "INFO", "message": "💾 Test 5: Download Feature"}
+💾 Menguji fitur download dengan navigasi ke halaman download...
+{"timestamp": "2025-12-23T10:24:44.427234", "level": "INFO", "message": "💾 Menguji fitur download dengan navigasi ke halaman download..."}
+🔍 Testing download di Petangoran Station 1...
+{"timestamp": "2025-12-23T10:24:44.427956", "level": "INFO", "message": "🔍 Testing download di Petangoran Station 1..."}
+✅ Ditemukan tombol/link download di Petangoran Station 1
+{"timestamp": "2025-12-23T10:24:52.106864", "level": "INFO", "message": "✅ Ditemukan tombol/link download di Petangoran Station 1"}
+📅 Mengisi date picker...
+{"timestamp": "2025-12-23T10:24:55.372884", "level": "INFO", "message": "📅 Mengisi date picker..."}
+🔽 Mencoba klik tombol download...
+{"timestamp": "2025-12-23T10:24:57.784101", "level": "INFO", "message": "🔽 Mencoba klik tombol download..."}
+✅ Modal password ditemukan di Petangoran Station 1
+{"timestamp": "2025-12-23T10:25:00.955428", "level": "INFO", "message": "✅ Modal password ditemukan di Petangoran Station 1"}
+📸 Screenshot saved [test_name=Tombol Download, filename=Tombol_Download_20251223_102501.png]
+{"timestamp": "2025-12-23T10:25:01.135871", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Tombol Download", "filename": "Tombol_Download_20251223_102501.png"}
+📝 Test result recorded: Tombol Download [status=BERHASIL, details=Tombol download ditemukan di halaman station, duration=N/A]
+{"timestamp": "2025-12-23T10:25:01.136848", "level": "INFO", "message": "📝 Test result recorded: Tombol Download", "status": "BERHASIL", "details": "Tombol download ditemukan di halaman station", "duration": "N/A"}
+📸 Screenshot saved [test_name=Modal Password, filename=Modal_Password_20251223_102501.png]
+{"timestamp": "2025-12-23T10:25:01.260195", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Modal Password", "filename": "Modal_Password_20251223_102501.png"}
+📝 Test result recorded: Modal Password [status=BERHASIL, details=Modal password muncul setelah klik download dengan, duration=N/A]
+{"timestamp": "2025-12-23T10:25:01.261277", "level": "INFO", "message": "📝 Test result recorded: Modal Password", "status": "BERHASIL", "details": "Modal password muncul setelah klik download dengan", "duration": "N/A"}
+📸 Screenshot captured for error in Notifikasi [operation=Notifikasi, screenshot=ERROR_Notifikasi_20251223_102501.png, error_type=Exception, error_message=Sistem notifikasi tidak ditemukan]
+{"timestamp": "2025-12-23T10:25:01.383482", "level": "ERROR", "message": "📸 Screenshot captured for error in Notifikasi", "operation": "Notifikasi", "screenshot": "ERROR_Notifikasi_20251223_102501.png", "error_type": "Exception", "error_message": "Sistem notifikasi tidak ditemukan"}
+📝 Test result recorded: Notifikasi [status=GAGAL, details=Sistem notifikasi tidak ditemukan, duration=N/A]
+{"timestamp": "2025-12-23T10:25:01.385010", "level": "INFO", "message": "📝 Test result recorded: Notifikasi", "status": "GAGAL", "details": "Sistem notifikasi tidak ditemukan", "duration": "N/A"}
+📊 Validasi fitur download selesai
+{"timestamp": "2025-12-23T10:25:01.386031", "level": "INFO", "message": "📊 Validasi fitur download selesai"}
+⏱️ Download_test: test_download_feature [duration=16.96s, status=✅ PASS, success=True]
+{"timestamp": "2025-12-23T10:25:01.386905", "level": "INFO", "message": "⏱️ Download_test: test_download_feature", "duration": "16.96s", "status": "✅ PASS", "success": true}
+📄 Membuat Laporan PDF...
+{"timestamp": "2025-12-23T10:25:01.387825", "level": "INFO", "message": "📄 Membuat Laporan PDF..."}
+📄 Membuat laporan PDF dengan format tabel...
+{"timestamp": "2025-12-23T10:25:01.388564", "level": "INFO", "message": "📄 Membuat laporan PDF dengan format tabel..."}
+✅ Laporan PDF berhasil dibuat [filename=laporan_pengujian_20251223_102501.pdf, path=C:\programming\solunimun-test\automation_tests\reports\laporan_pengujian_20251223_102501.pdf]
+{"timestamp": "2025-12-23T10:25:01.400753", "level": "INFO", "message": "✅ Laporan PDF berhasil dibuat", "filename": "laporan_pengujian_20251223_102501.pdf", "path": "C:\\programming\\solunimun-test\\automation_tests\\reports\\laporan_pengujian_20251223_102501.pdf"}
+👀 PDF dibuka secara otomatis
+{"timestamp": "2025-12-23T10:25:01.576508", "level": "INFO", "message": "👀 PDF dibuka secara otomatis"}
+📸 Screenshot saved [test_name=Pembuatan Laporan PDF, filename=Pembuatan_Laporan_PDF_20251223_102501.png]
+{"timestamp": "2025-12-23T10:25:01.705311", "level": "INFO", "message": "📸 Screenshot saved", "test_name": "Pembuatan Laporan PDF", "filename": "Pembuatan_Laporan_PDF_20251223_102501.png"}
+📝 Test result recorded: Pembuatan Laporan PDF [status=BERHASIL, details=Laporan dengan format tabel bergaris dan metrik pe, duration=N/A]
+{"timestamp": "2025-12-23T10:25:01.707094", "level": "INFO", "message": "📝 Test result recorded: Pembuatan Laporan PDF", "status": "BERHASIL", "details": "Laporan dengan format tabel bergaris dan metrik pe", "duration": "N/A"}
+💾 Structured logs saved [filename=test_session_20251223_102501.json]
+{"timestamp": "2025-12-23T10:25:01.717338", "level": "INFO", "message": "💾 Structured logs saved", "filename": "test_session_20251223_102501.json"}
+============================================================
+{"timestamp": "2025-12-23T10:25:01.718555", "level": "INFO", "message": "============================================================"}
+📊 FINAL TEST RESULTS
+{"timestamp": "2025-12-23T10:25:01.719713", "level": "INFO", "message": "📊 FINAL TEST RESULTS"}
+============================================================
+{"timestamp": "2025-12-23T10:25:01.720683", "level": "INFO", "message": "============================================================"}
+webdriver_init: ✅ PASS
+{"timestamp": "2025-12-23T10:25:01.721945", "level": "INFO", "message": "webdriver_init: ✅ PASS"}
+dashboard_open: ✅ PASS
+{"timestamp": "2025-12-23T10:25:01.722914", "level": "INFO", "message": "dashboard_open: ✅ PASS"}
+sensor_validation: ✅ PASS
+{"timestamp": "2025-12-23T10:25:01.723853", "level": "INFO", "message": "sensor_validation: ✅ PASS"}
+visual_elements: ✅ PASS
+{"timestamp": "2025-12-23T10:25:01.724876", "level": "INFO", "message": "visual_elements: ✅ PASS"}
+download_feature: ✅ PASS
+{"timestamp": "2025-12-23T10:25:01.726180", "level": "INFO", "message": "download_feature: ✅ PASS"}
+Success Rate: 5/5 (100.0%) [successful_tests=5, total_tests=5, success_rate=100.0%]
+{"timestamp": "2025-12-23T10:25:01.727343", "level": "INFO", "message": "Success Rate: 5/5 (100.0%)", "successful_tests": 5, "total_tests": 5, "success_rate": "100.0%"}
+Total Operations Duration: 135.86s [total_operations=10, avg_duration=13.59s]
+{"timestamp": "2025-12-23T10:25:01.728304", "level": "INFO", "message": "Total Operations Duration: 135.86s", "total_operations": 10, "avg_duration": "13.59s"}
+🎉 OVERALL: TESTING SUCCESSFUL!
+{"timestamp": "2025-12-23T10:25:01.729171", "level": "INFO", "message": "🎉 OVERALL: TESTING SUCCESSFUL!"}
+============================================================
+{"timestamp": "2025-12-23T10:25:01.730093", "level": "INFO", "message": "============================================================"}
+🧹 WebDriver closed successfully
+{"timestamp": "2025-12-23T10:25:04.355358", "level": "INFO", "message": "🧹 WebDriver closed successfully"}

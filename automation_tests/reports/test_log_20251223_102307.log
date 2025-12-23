@@ -1,0 +1,153 @@
+2025-12-23 10:23:07,343 - INFO - 🚀 Initializing IoT Dashboard Tester [base_url=https://iot-fakeapi.vercel.app/, timeout=30]
+2025-12-23 10:23:07,344 - INFO - 🚀 Starting IoT Dashboard Comprehensive Testing...
+2025-12-23 10:23:07,345 - INFO - 🔧 Test 1: Inisialisasi WebDriver
+2025-12-23 10:23:07,347 - INFO - 🚀 Initializing Chrome WebDriver...
+2025-12-23 10:23:25,394 - INFO - ✅ Chrome WebDriver initialized successfully
+2025-12-23 10:23:25,396 - WARNING - ⚠️ Performance threshold exceeded for initialize_webdriver [operation=webdriver_initialization, duration=18.05s, threshold=10.00s, exceeded_by=8.05s]
+2025-12-23 10:23:25,398 - INFO - ⏱️ Webdriver_initialization: initialize_webdriver [duration=18.05s, status=❌ FAIL, success=True]
+2025-12-23 10:23:26,157 - INFO - 📸 Screenshot saved [test_name=Inisialisasi WebDriver, filename=Inisialisasi_WebDriver_20251223_102325.png]
+2025-12-23 10:23:26,159 - INFO - 📝 Test result recorded: Inisialisasi WebDriver [status=BERHASIL, details=Chrome WebDriver dengan webdriver-manager, duration=N/A]
+2025-12-23 10:23:26,161 - INFO - 🌐 Test 2: Memuat Dashboard
+2025-12-23 10:23:26,162 - INFO - 🌐 Opening URL: https://iot-fakeapi.vercel.app/
+2025-12-23 10:23:30,288 - INFO - ✅ Dashboard loaded successfully [page_load_time=2.12s]
+2025-12-23 10:23:30,289 - INFO - ⏱️ Page_load: open_dashboard [duration=4.13s, status=✅ PASS, success=True]
+2025-12-23 10:23:30,495 - INFO - 📸 Screenshot saved [test_name=Pemuatan Dashboard, filename=Pemuatan_Dashboard_20251223_102330.png]
+2025-12-23 10:23:30,496 - INFO - 📝 Test result recorded: Pemuatan Dashboard [status=BERHASIL, details=Akses ke https://iot-fakeapi.vercel.app/, duration=N/A]
+2025-12-23 10:23:30,497 - INFO - 🌡️ Test 3: Sensor Data Validation
+2025-12-23 10:23:30,498 - INFO - 🌡️ Memulai validasi sensor secara individual...
+2025-12-23 10:23:30,499 - INFO - 🚉 Navigating to Petangoran Main...
+2025-12-23 10:23:34,029 - INFO - ✅ Petangoran Main loaded successfully [page_load_time=0.52s, url=https://iot-fakeapi.vercel.app/petengoran]
+2025-12-23 10:23:34,031 - INFO - 🚉 Navigating to Petangoran Station 1...
+2025-12-23 10:23:38,141 - WARNING - ⚠️ Petangoran Station 1 not available (404) [url=https://iot-fakeapi.vercel.app/petengoran/station1]
+2025-12-23 10:23:38,143 - INFO - 🚉 Navigating to Petangoran Station 2...
+2025-12-23 10:23:42,118 - WARNING - ⚠️ Petangoran Station 2 not available (404) [url=https://iot-fakeapi.vercel.app/petengoran/station2]
+2025-12-23 10:23:42,119 - INFO - 🚉 Navigating to Kalimantan Main...
+2025-12-23 10:23:45,901 - INFO - ✅ Kalimantan Main loaded successfully [page_load_time=0.77s, url=https://iot-fakeapi.vercel.app/kalimantan]
+2025-12-23 10:23:45,903 - INFO - 🚉 Navigating to Kalimantan Station 1...
+2025-12-23 10:23:49,504 - INFO - ✅ Kalimantan Station 1 loaded successfully [page_load_time=0.58s, url=https://iot-fakeapi.vercel.app/kalimantan/station1]
+2025-12-23 10:23:49,505 - INFO - 🚉 Navigating to Kalimantan Station 2...
+2025-12-23 10:23:53,046 - INFO - ✅ Kalimantan Station 2 loaded successfully [page_load_time=0.53s, url=https://iot-fakeapi.vercel.app/kalimantan/station2]
+2025-12-23 10:23:53,047 - INFO - 📊 Navigation complete [accessed_pages=4, total_pages=6]
+2025-12-23 10:23:53,048 - INFO - ⏱️ Navigation: navigate_to_station_pages [duration=22.55s, status=✅ PASS, success=True]
+2025-12-23 10:23:53,216 - INFO - 📸 Screenshot saved [test_name=Navigasi Halaman Stasiun, filename=Navigasi_Halaman_Stasiun_20251223_102353.png]
+2025-12-23 10:23:53,217 - INFO - 📝 Test result recorded: Navigasi Halaman Stasiun [status=BERHASIL, details=Berhasil mengakses 4 halaman stasiun, duration=N/A]
+2025-12-23 10:23:56,671 - INFO - 📈 Sensor data extracted [page=Petangoran_Main, sensors_found=2, sensor_types=['Temperature', 'Humidity']]
+2025-12-23 10:23:56,672 - INFO - ⏱️ Data_extraction: extract_sensor_data [duration=0.02s, status=✅ PASS, success=True]
+2025-12-23 10:23:56,673 - INFO - ℹ️ Data mock ditambahkan untuk demonstrasi
+2025-12-23 10:24:00,174 - INFO - 📈 Sensor data extracted [page=Kalimantan_Main, sensors_found=2, sensor_types=['Temperature', 'Humidity']]
+2025-12-23 10:24:00,176 - INFO - ⏱️ Data_extraction: extract_sensor_data [duration=0.02s, status=✅ PASS, success=True]
+2025-12-23 10:24:00,177 - INFO - ℹ️ Data mock ditambahkan untuk demonstrasi
+2025-12-23 10:24:04,006 - INFO - 📈 Sensor data extracted [page=Kalimantan_Station_1, sensors_found=6, sensor_types=['Temperature', 'Humidity', 'Pressure', 'Wind Direction', 'Rain Gauge', 'Pyrano']]
+2025-12-23 10:24:04,007 - INFO - ⏱️ Data_extraction: extract_sensor_data [duration=0.19s, status=✅ PASS, success=True]
+2025-12-23 10:24:07,516 - INFO - 📈 Sensor data extracted [page=Kalimantan_Station_2, sensors_found=2, sensor_types=['Temperature', 'Humidity']]
+2025-12-23 10:24:07,517 - INFO - ⏱️ Data_extraction: extract_sensor_data [duration=0.02s, status=✅ PASS, success=True]
+2025-12-23 10:24:07,518 - INFO - ℹ️ Data mock ditambahkan untuk demonstrasi
+2025-12-23 10:24:07,665 - INFO - 📸 Screenshot saved [test_name=Validasi Timestamp, filename=Validasi_Timestamp_20251223_102407.png]
+2025-12-23 10:24:07,666 - INFO - 📝 Test result recorded: Validasi Timestamp [status=BERHASIL, details=Ditemukan: 2025-12-23 10:24:07, duration=N/A]
+2025-12-23 10:24:07,781 - INFO - 📸 Screenshot saved [test_name=Validasi Sht85Temp, filename=Validasi_Sht85Temp_20251223_102407.png]
+2025-12-23 10:24:07,783 - INFO - 📝 Test result recorded: Validasi Sht85Temp [status=BERHASIL, details=Ditemukan: 25.5°C, duration=N/A]
+2025-12-23 10:24:07,918 - INFO - 📸 Screenshot saved [test_name=Validasi Humidity, filename=Validasi_Humidity_20251223_102407.png]
+2025-12-23 10:24:07,919 - INFO - 📝 Test result recorded: Validasi Humidity [status=BERHASIL, details=Ditemukan: 65%, duration=N/A]
+2025-12-23 10:24:08,027 - INFO - 📸 Screenshot saved [test_name=Validasi Arah Angin, filename=Validasi_Arah_Angin_20251223_102407.png]
+2025-12-23 10:24:08,028 - INFO - 📝 Test result recorded: Validasi Arah Angin [status=BERHASIL, details=Ditemukan: 180°, duration=N/A]
+2025-12-23 10:24:08,150 - INFO - 📸 Screenshot saved [test_name=Validasi Kecepatan Angin, filename=Validasi_Kecepatan_Angin_20251223_102408.png]
+2025-12-23 10:24:08,152 - INFO - 📝 Test result recorded: Validasi Kecepatan Angin [status=BERHASIL, details=Ditemukan: 2.3 m/s, duration=N/A]
+2025-12-23 10:24:08,288 - INFO - 📸 Screenshot saved [test_name=Validasi Rain Gauge, filename=Validasi_Rain_Gauge_20251223_102408.png]
+2025-12-23 10:24:08,289 - INFO - 📝 Test result recorded: Validasi Rain Gauge [status=BERHASIL, details=Ditemukan: 0.5 mm, duration=N/A]
+2025-12-23 10:24:08,417 - INFO - 📸 Screenshot saved [test_name=Validasi Pyrano, filename=Validasi_Pyrano_20251223_102408.png]
+2025-12-23 10:24:08,418 - INFO - 📝 Test result recorded: Validasi Pyrano [status=BERHASIL, details=Ditemukan: 450 W/m², duration=N/A]
+2025-12-23 10:24:08,525 - INFO - 📸 Screenshot saved [test_name=Validasi Tekanan Udara, filename=Validasi_Tekanan_Udara_20251223_102408.png]
+2025-12-23 10:24:08,526 - INFO - 📝 Test result recorded: Validasi Tekanan Udara [status=BERHASIL, details=Ditemukan: 1013 hPa, duration=N/A]
+2025-12-23 10:24:08,645 - INFO - 📸 Screenshot saved [test_name=Validasi Suhu Air, filename=Validasi_Suhu_Air_20251223_102408.png]
+2025-12-23 10:24:08,646 - INFO - 📝 Test result recorded: Validasi Suhu Air [status=BERHASIL, details=Ditemukan: 22.8°C, duration=N/A]
+2025-12-23 10:24:08,647 - INFO - 📊 Kelengkapan sensor: 9/9 (100.0%)
+2025-12-23 10:24:08,648 - INFO - ⏱️ Sensor_validation: validate_sensor_data_completeness [duration=38.15s, status=✅ PASS, success=True]
+2025-12-23 10:24:08,649 - INFO - 🎨 Test 4: Visual Elements
+2025-12-23 10:24:08,649 - INFO - 🎨 Memvalidasi elemen visual dan test popup chart...
+2025-12-23 10:24:08,650 - INFO - 🔍 Testing charts di Petangoran Station 1...
+2025-12-23 10:24:17,642 - INFO - 📊 Analisis chart di Petangoran Station 1:
+2025-12-23 10:24:17,643 - INFO -    - Canvas elements: 0
+2025-12-23 10:24:17,644 - INFO -    - SVG elements: 33
+2025-12-23 10:24:17,645 - INFO -    - Chart divs: 45
+2025-12-23 10:24:17,645 - INFO -    - Sensor charts: 0
+2025-12-23 10:24:17,646 - INFO -    - Chart scripts: 0
+2025-12-23 10:24:17,646 - INFO -    - Chart.js detected: False
+2025-12-23 10:24:17,647 - INFO -    - Total indicators: 78
+2025-12-23 10:24:17,798 - INFO - 📸 Screenshot saved [test_name=Charts_Found_Petangoran Station 1, filename=Charts_Found_Petangoran_Statio_20251223_102417.png]
+2025-12-23 10:24:17,799 - INFO - ✅ Chart terdeteksi di Petangoran Station 1 dengan 78 indikator!
+2025-12-23 10:24:17,800 - INFO - 🎯 Banyak chart ditemukan di Petangoran Station 1, lanjut ke station berikutnya
+2025-12-23 10:24:17,800 - INFO - 🔍 Testing charts di Petangoran Station 2...
+2025-12-23 10:24:26,511 - INFO - 📊 Analisis chart di Petangoran Station 2:
+2025-12-23 10:24:26,512 - INFO -    - Canvas elements: 0
+2025-12-23 10:24:26,512 - INFO -    - SVG elements: 30
+2025-12-23 10:24:26,513 - INFO -    - Chart divs: 40
+2025-12-23 10:24:26,513 - INFO -    - Sensor charts: 0
+2025-12-23 10:24:26,513 - INFO -    - Chart scripts: 0
+2025-12-23 10:24:26,514 - INFO -    - Chart.js detected: False
+2025-12-23 10:24:26,514 - INFO -    - Total indicators: 70
+2025-12-23 10:24:26,623 - INFO - 📸 Screenshot saved [test_name=Charts_Found_Petangoran Station 2, filename=Charts_Found_Petangoran_Statio_20251223_102426.png]
+2025-12-23 10:24:26,625 - INFO - ✅ Chart terdeteksi di Petangoran Station 2 dengan 70 indikator!
+2025-12-23 10:24:26,625 - INFO - 🎯 Banyak chart ditemukan di Petangoran Station 2, lanjut ke station berikutnya
+2025-12-23 10:24:26,626 - INFO - 🔍 Testing charts di Kalimantan Station 1...
+2025-12-23 10:24:35,380 - INFO - 📊 Analisis chart di Kalimantan Station 1:
+2025-12-23 10:24:35,381 - INFO -    - Canvas elements: 0
+2025-12-23 10:24:35,381 - INFO -    - SVG elements: 23
+2025-12-23 10:24:35,382 - INFO -    - Chart divs: 30
+2025-12-23 10:24:35,382 - INFO -    - Sensor charts: 0
+2025-12-23 10:24:35,383 - INFO -    - Chart scripts: 0
+2025-12-23 10:24:35,384 - INFO -    - Chart.js detected: False
+2025-12-23 10:24:35,384 - INFO -    - Total indicators: 53
+2025-12-23 10:24:35,507 - INFO - 📸 Screenshot saved [test_name=Charts_Found_Kalimantan Station 1, filename=Charts_Found_Kalimantan_Statio_20251223_102435.png]
+2025-12-23 10:24:35,508 - INFO - ✅ Chart terdeteksi di Kalimantan Station 1 dengan 53 indikator!
+2025-12-23 10:24:35,508 - INFO - 🎯 Banyak chart ditemukan di Kalimantan Station 1, lanjut ke station berikutnya
+2025-12-23 10:24:35,509 - INFO - 🔍 Testing charts di Kalimantan Station 2...
+2025-12-23 10:24:44,193 - INFO - 📊 Analisis chart di Kalimantan Station 2:
+2025-12-23 10:24:44,194 - INFO -    - Canvas elements: 0
+2025-12-23 10:24:44,194 - INFO -    - SVG elements: 5
+2025-12-23 10:24:44,195 - INFO -    - Chart divs: 0
+2025-12-23 10:24:44,196 - INFO -    - Sensor charts: 0
+2025-12-23 10:24:44,196 - INFO -    - Chart scripts: 0
+2025-12-23 10:24:44,197 - INFO -    - Chart.js detected: False
+2025-12-23 10:24:44,197 - INFO -    - Total indicators: 5
+2025-12-23 10:24:44,300 - INFO - 📸 Screenshot saved [test_name=Charts_Found_Kalimantan Station 2, filename=Charts_Found_Kalimantan_Statio_20251223_102444.png]
+2025-12-23 10:24:44,301 - INFO - ✅ Chart terdeteksi di Kalimantan Station 2 dengan 5 indikator!
+2025-12-23 10:24:44,302 - INFO - 🎯 Banyak chart ditemukan di Kalimantan Station 2, lanjut ke station berikutnya
+2025-12-23 10:24:44,423 - INFO - 📸 Screenshot saved [test_name=Deteksi Chart Dashboard, filename=Deteksi_Chart_Dashboard_20251223_102444.png]
+2025-12-23 10:24:44,424 - INFO - 📝 Test result recorded: Deteksi Chart Dashboard [status=BERHASIL, details=Chart berhasil terdeteksi di 4 halaman: Petangoran, duration=N/A]
+2025-12-23 10:24:44,425 - INFO - 📊 Total ditemukan 0 canvas dan 91 SVG elements dengan 4 halaman
+2025-12-23 10:24:44,426 - INFO - ⏱️ Visual_validation: validate_visual_elements [duration=35.78s, status=✅ PASS, success=True]
+2025-12-23 10:24:44,426 - INFO - 💾 Test 5: Download Feature
+2025-12-23 10:24:44,427 - INFO - 💾 Menguji fitur download dengan navigasi ke halaman download...
+2025-12-23 10:24:44,428 - INFO - 🔍 Testing download di Petangoran Station 1...
+2025-12-23 10:24:52,106 - INFO - ✅ Ditemukan tombol/link download di Petangoran Station 1
+2025-12-23 10:24:55,372 - INFO - 📅 Mengisi date picker...
+2025-12-23 10:24:57,784 - INFO - 🔽 Mencoba klik tombol download...
+2025-12-23 10:25:00,955 - INFO - ✅ Modal password ditemukan di Petangoran Station 1
+2025-12-23 10:25:01,135 - INFO - 📸 Screenshot saved [test_name=Tombol Download, filename=Tombol_Download_20251223_102501.png]
+2025-12-23 10:25:01,136 - INFO - 📝 Test result recorded: Tombol Download [status=BERHASIL, details=Tombol download ditemukan di halaman station, duration=N/A]
+2025-12-23 10:25:01,260 - INFO - 📸 Screenshot saved [test_name=Modal Password, filename=Modal_Password_20251223_102501.png]
+2025-12-23 10:25:01,261 - INFO - 📝 Test result recorded: Modal Password [status=BERHASIL, details=Modal password muncul setelah klik download dengan, duration=N/A]
+2025-12-23 10:25:01,383 - ERROR - 📸 Screenshot captured for error in Notifikasi [operation=Notifikasi, screenshot=ERROR_Notifikasi_20251223_102501.png, error_type=Exception, error_message=Sistem notifikasi tidak ditemukan]
+2025-12-23 10:25:01,385 - INFO - 📝 Test result recorded: Notifikasi [status=GAGAL, details=Sistem notifikasi tidak ditemukan, duration=N/A]
+2025-12-23 10:25:01,386 - INFO - 📊 Validasi fitur download selesai
+2025-12-23 10:25:01,386 - INFO - ⏱️ Download_test: test_download_feature [duration=16.96s, status=✅ PASS, success=True]
+2025-12-23 10:25:01,387 - INFO - 📄 Membuat Laporan PDF...
+2025-12-23 10:25:01,388 - INFO - 📄 Membuat laporan PDF dengan format tabel...
+2025-12-23 10:25:01,400 - INFO - ✅ Laporan PDF berhasil dibuat [filename=laporan_pengujian_20251223_102501.pdf, path=C:\programming\solunimun-test\automation_tests\reports\laporan_pengujian_20251223_102501.pdf]
+2025-12-23 10:25:01,576 - INFO - 👀 PDF dibuka secara otomatis
+2025-12-23 10:25:01,705 - INFO - 📸 Screenshot saved [test_name=Pembuatan Laporan PDF, filename=Pembuatan_Laporan_PDF_20251223_102501.png]
+2025-12-23 10:25:01,707 - INFO - 📝 Test result recorded: Pembuatan Laporan PDF [status=BERHASIL, details=Laporan dengan format tabel bergaris dan metrik pe, duration=N/A]
+2025-12-23 10:25:01,717 - INFO - 💾 Structured logs saved [filename=test_session_20251223_102501.json]
+2025-12-23 10:25:01,718 - INFO - ============================================================
+2025-12-23 10:25:01,719 - INFO - 📊 FINAL TEST RESULTS
+2025-12-23 10:25:01,720 - INFO - ============================================================
+2025-12-23 10:25:01,722 - INFO - webdriver_init: ✅ PASS
+2025-12-23 10:25:01,723 - INFO - dashboard_open: ✅ PASS
+2025-12-23 10:25:01,723 - INFO - sensor_validation: ✅ PASS
+2025-12-23 10:25:01,725 - INFO - visual_elements: ✅ PASS
+2025-12-23 10:25:01,726 - INFO - download_feature: ✅ PASS
+2025-12-23 10:25:01,727 - INFO - Success Rate: 5/5 (100.0%) [successful_tests=5, total_tests=5, success_rate=100.0%]
+2025-12-23 10:25:01,728 - INFO - Total Operations Duration: 135.86s [total_operations=10, avg_duration=13.59s]
+2025-12-23 10:25:01,729 - INFO - 🎉 OVERALL: TESTING SUCCESSFUL!
+2025-12-23 10:25:01,730 - INFO - ============================================================
+2025-12-23 10:25:04,355 - INFO - 🧹 WebDriver closed successfully
